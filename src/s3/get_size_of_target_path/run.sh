@@ -27,4 +27,5 @@ do
   aws s3 ls ${S3_PATH}${SUB_PATH} --summarize | tail -n 1 | awk '{ print $3}' >> ${size_file}
 done
 
-cat ${size_file} | awk 'BEGIN {total=0}{total+=$1}END{print total/1024/1024" MB"}'
+cat ${size_file} | awk 'BEGIN {total=0}{total+=$1}END{print total/1024/1024/1024" GB"}'
+
