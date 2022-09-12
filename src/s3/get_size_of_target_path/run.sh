@@ -16,7 +16,7 @@ echo "S3_PATH:     ${S3_PATH}"
 sub_path_file="path.txt"
 size_file="size.txt"
 
-rm ${size_file}
+echo "" > ${size_file}
 
 aws s3 ls ${S3_PATH} | grep ${TARGET_DATE} | awk '{ print $2 }' > ${sub_path_file}
 
