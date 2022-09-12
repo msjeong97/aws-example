@@ -1,5 +1,5 @@
 #!/bin/bash
-set -xe
+set -e
 
 if [[ $# -ne 4 ]]
 then
