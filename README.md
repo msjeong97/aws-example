@@ -1,1 +1,1 @@
-# aws-scripts
+# aws-example
